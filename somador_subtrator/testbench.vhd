@@ -96,7 +96,7 @@ BEGIN
 
     ASSERT (s_tb = "0110") REPORT "--- 's' incorreto para '0111' ---" SEVERITY error;
 
-    -- 1000 (8)
+    -- 1000 (-8)
     n_tb <= "1000";
     somar_tb <= '0';
     subtrair_tb <= '1';
