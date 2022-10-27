@@ -8,7 +8,7 @@ ENTITY decodificador IS
   GENERIC(W : NATURAL := 4);
   PORT (
     n : IN STD_LOGIC_VECTOR(W-1 DOWNTO 0); -- number to display
-    enabled : IN STD_LOGIC; -- flag to display
+    enabled : IN STD_LOGIC; -- BIT to On/Off LEDs
     a, b, c, d, e, f, g : OUT STD_LOGIC  -- LEDs
   );
 END decodificador;
@@ -27,7 +27,7 @@ BEGIN
   b <= enabled AND ((nA XNOR nB) OR (NOT nC AND NOT nD) OR (nA AND NOT nC) OR (nB AND nC AND nD));
   c <= enabled AND (NOT nC OR nD OR (nA XOR nB));
   d <= enabled AND ((NOT nB AND NOT nD) OR (nC AND NOT nD) OR (nB AND NOT nC AND nD) OR (NOT nB AND nC));
-  e <= enabled AND (NOT nD AND (NOT nB OR nC);) 
+  e <= enabled AND (NOT nD AND (NOT nB OR nC));
   f <= enabled AND ((NOT nC AND NOT nD) OR (nA XOR nB));
   g <= enabled AND ((NOT nD AND (nA OR nC)) OR (nB XOR nC));
 END structural;
