@@ -10,7 +10,6 @@ END testbench;
 ARCHITECTURE test OF testbench IS
   CONSTANT W : NATURAL := 4;
   CONSTANT DELAY : TIME := 10 ns;
-  CONSTANT ENABLED : STD_LOGIC := '1';
 
   COMPONENT trabalho1 IS
     -- Component declaration

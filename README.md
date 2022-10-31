@@ -34,6 +34,16 @@ Neste circuito foram demonstradas as entradas `X` e `Y` do tipo `STD_LOGIC_VECTO
 ## decodificador
 
 ![decodificador](decodificador/circuit-simulation.png)
+
+
+Tabela verdade
+
+x(decimal) | x1 | x2 | x3 | x4 | a | b | c | d | e | f | g 
+:-----------:|----|----|----|----|---|---|---|---|---|---|---
+1 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 
+
+
+
 ## Circuito completo
 
 ![trabalho1](trabalho1/circuit-simulation.png)

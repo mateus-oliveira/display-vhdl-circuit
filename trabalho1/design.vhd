@@ -42,7 +42,7 @@ ARCHITECTURE structural OF trabalho1 IS
   COMPONENT decodificador
     PORT (
       n : IN STD_LOGIC_VECTOR(W-1 DOWNTO 0); -- number to display
-      enabled : IN STD_LOGIC; -- BIT to On/Off LEDs
+      on_off : IN STD_LOGIC; -- BIT to On/Off LEDs
       a, b, c, d, e, f, g : OUT STD_LOGIC  -- LEDs
     );
   END COMPONENT;
