@@ -98,11 +98,11 @@ BEGIN
 
     -- 1000 (-8)
     n_tb <= "1000";
-    somar_tb <= '0';
-    subtrair_tb <= '1';
+    somar_tb <= '1';
+    subtrair_tb <= '0';
     WAIT FOR DELAY;
 
-    ASSERT (s_tb = "0111") REPORT "--- 's' incorreto para '1000' ---" SEVERITY error;
+    ASSERT (s_tb = "1001") REPORT "--- 's' incorreto para '1000' ---" SEVERITY error;
 
     -- 1001 (-7)
     n_tb <= "1001";
